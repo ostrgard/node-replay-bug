@@ -1,0 +1,12 @@
+replay = require('replay')
+http = require('http')
+https = require('https')
+axios = require('axios')
+fetch = require('node-fetch')
+
+http.get('http://jsonplaceholder.typicode.com/posts/1', () => {})
+https.get('https://jsonplaceholder.typicode.com/posts/2', () => {})
+axios.get('http://jsonplaceholder.typicode.com/posts/3', () => {})
+axios.get('https://jsonplaceholder.typicode.com/posts/4', () => {})
+fetch('http://jsonplaceholder.typicode.com/posts/5', () => {})
+fetch('https://jsonplaceholder.typicode.com/posts/6', () => {})
